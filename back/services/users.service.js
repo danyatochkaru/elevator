@@ -11,3 +11,5 @@ class UsersService {
     usersDal.getUsers(getAnswer)
   }
 }
+
+module.exports = new UsersService()
