@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
 }
-.authorization{
+.reg_auth{
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(24px);
     border-radius: 20px;
@@ -27,8 +27,10 @@
     height: 535px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: center; 
+}
+.reg_auth_visible{
+    display: none;
 }
 .logo_authorization{
     font-size: 24px;
@@ -38,7 +40,7 @@
     margin: 89px 0px 83px 0px;
 }
 input::-webkit-input-placeholder { color: #575757; }
-.authorization input{
+.reg_auth input{
     width: 272px;
     border: none;
     background:transparent;
@@ -50,10 +52,10 @@ input::-webkit-input-placeholder { color: #575757; }
     font-size: 18px;
     border-bottom:1px solid #000000;
 }
-.authorization input:focus{
+.reg_auth input:focus{
     outline:none;
 }
-.log_auth{
+.log_auth_but{
     margin-top: 30px;
     background: #000000;
     border-radius: 34px;
@@ -67,10 +69,10 @@ input::-webkit-input-placeholder { color: #575757; }
     color: #FFFFFF;
     margin-bottom: 55px;
 }
-.log_auth:hover{
+.log_auth_but:hover{
     cursor: pointer;
 }
-.authorization a{
+.reg_auth a{
     text-decoration:none;
     border-bottom: 1px solid #003578;
     color: #000000;
@@ -79,4 +81,12 @@ input::-webkit-input-placeholder { color: #575757; }
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
     margin-bottom: 19px;
+}
+.registration h1{
+    margin-bottom: 40px;
+}
+.registration button{
+    margin-top: 10px;
+    width: 220px;
+    height: 35px;
 }

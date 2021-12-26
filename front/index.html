@@ -10,15 +10,25 @@
 <body>
     <div class="page">
         <div class="main">
-            <div class="authorization">
+            <div class="authorization reg_auth reg_auth_visible">
                 <h1 class="logo_authorization">Авторизация</h1>
                 <input type="text" placeholder="login">
                 <input type="password" placeholder="password">
-                <button class="log_auth">Войти</button>
-                <a href="#">Зарегистрироваьться</a>
+                <button class="log_auth_but">Войти</button>
+                <a href="#" id="log" onclick="visible()">Зарегистрироваьться</a>
                 <a href="#">Забыл пароль</a>
+            </div>
+            <div class="registration reg_auth ">
+                <h1 class="logo_authorization">Регистрация</h1>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Компания">
+                <input type="email" placeholder="Почта">
+                <input type="password" placeholder="Пароль">
+                <button class="log_auth_but">Зарегистрироваться</button>
+                <a href="#" id="reg" onclick="visible()">Войти</a>
             </div>
         </div>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
