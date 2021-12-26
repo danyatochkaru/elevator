@@ -11,6 +11,6 @@ app.use(require('cors')({
   origin: '*'
 }))
 
-app.use(require('./router'))
+app.use('/api', require('./router'))
 
 app.listen(3303, () => console.log("Server started on http://localhost:3303"))
