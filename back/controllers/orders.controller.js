@@ -16,9 +16,9 @@ class OrdersController {
         ordersService.getAllOrders(this.#sendResponse(res))
       }
     } catch (err) {
-      
+      console.error(err)
+      res.status(500).json(err)
     }
-    return "ok"
   }
 }
 module.exports = new OrdersController()
