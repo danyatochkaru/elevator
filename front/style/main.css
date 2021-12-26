@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-.check{
-    border: 2px solid red;
+body{
+    margin: 0;
 }
 .page{
     display: flex;
