@@ -1,4 +1,4 @@
-class OrderController {
+class ProductController {
   #sendResponse = (res) => {
     return (err, result) => {
       try {
@@ -10,15 +10,14 @@ class OrderController {
       }
     }
   }
-  async getAllByClientId(req, res) {
+  async getAll(req, res) {
     try {
       let payload = {
-        client_id: Number(req.query?.client_id),
         from: Number(req.query?.from),
         count: Number(req.query?.count),
         order_by: req.query?.order_by
       }
-      await ordersService.getAllOrdersByClientId(payload, this.#sendResponse(res))
+      await productsService.getAllProducts(payload, this.#sendResponse(res))
     } catch (err) {
       console.error(err)
       res.status(500).json(err)
@@ -27,9 +26,9 @@ class OrderController {
   async getById(req, res) {
     try {
       let payload = {
-        order_id: Number(req.query?.order_id)
+        product_id: Number(req.query?.product_id)
       }
-      await ordersService.getOrderById(payload, this.#sendResponse(res))
+      await productsService.getProductById(payload, this.#sendResponse(res))
     } catch (err) {
       console.error(err)
       res.status(500).json(err)
@@ -37,4 +36,4 @@ class OrderController {
   }
 }
 
-module.exports = new OrderController()
+module.exports = new ProductController()
