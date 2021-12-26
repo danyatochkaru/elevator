@@ -57,6 +57,7 @@ input::-webkit-input-placeholder { color: #575757; }
     margin-top: 30px;
     background: #000000;
     border-radius: 34px;
+    border: 0;
     width: 115px;
     height: 36px;
     font-size: 14px;
@@ -68,4 +69,14 @@ input::-webkit-input-placeholder { color: #575757; }
 }
 .log_auth:hover{
     cursor: pointer;
+}
+.authorization a{
+    text-decoration:none;
+    border-bottom: 1px solid #003578;
+    color: #000000;
+    font-size: 14px;
+    line-height: 17px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 19px;
 }
