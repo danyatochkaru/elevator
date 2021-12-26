@@ -4,12 +4,15 @@
 }
 body{
     margin: 0;
+}
+.page{
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    min-width: 1440px;
+    width: 100%;
 }
 .header{
-    min-width: 1440px;
     width: 100%;
     height: 90px;
     display: flex;
@@ -69,7 +72,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 171px;
+    margin-right: 171px;
 }
 .filter button{
     display: flex;
@@ -104,4 +107,23 @@ body{
     width: 18px;
     height: 18px;
     margin-right: 5px;
+}
+.orders_nav{
+    width: 76%;
+    min-width: 1098px;
+    margin-top: 38px;
+}
+.stroke_explain{
+    padding: 0px 26px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.stroke_explain p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+    margin: 0;
 }
