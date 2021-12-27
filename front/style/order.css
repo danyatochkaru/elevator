@@ -102,6 +102,9 @@ body{
     justify-content: flex-end;
     margin-right: 171px;
 }
+.filter a{
+    text-decoration: none;
+}
 .filter button{
     display: flex;
     border: none;

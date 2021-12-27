@@ -101,3 +101,6 @@ let options=ORDERS.map(item=>{
 })
 let orders_table = document.querySelector(".orders_table");
 orders_table.innerHTML=html;
+//storage_table
+// let storage_table = document.querySelector(".storage_table");
+// storage_table.innerHTML = html;

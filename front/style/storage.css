@@ -1,0 +1,35 @@
+.orders_but::before{
+    content: "";
+    background-image: url(../img/Storage.svg);
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+.storage_nav{
+    width: 76%;
+    min-width: 1098px;
+    margin-top: 38px;
+}
+.storage_table{
+    padding: 0;
+    margin: 0;
+}
+.storage_table li{
+    border-top: 2px solid #003578;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+    padding: 21px 0;
+    align-items: center;
+    
+}
+.orders_table li p{
+    margin: 0;
+    justify-self: center;
+}
