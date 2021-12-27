@@ -1,9 +1,21 @@
+//authorization and registration
 function visible(){
     let auth =document.querySelector(".authorization");
     auth.classList.toggle("reg_auth_visible");
     let reg =document.querySelector(".registration");
     reg.classList.toggle("reg_auth_visible");
 }
+//Personal area visible
+function PA_drop(){
+    let drop = document.querySelector('.PA_drop');
+    if (drop.style.display!=="flex") {
+        drop.style.display="flex";
+        console.log(drop.style.display);
+    }else if (drop.style.display=="flex"){
+        drop.style.display="none"
+    }
+}
+//info_strage
 const AUTH = {
     user_id:1
 }

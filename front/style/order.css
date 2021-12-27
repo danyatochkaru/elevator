@@ -51,20 +51,48 @@ body{
 }
 .personal_area{
     display: flex;
-    margin: 0;
     font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    align-items: center;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     margin-right: 84px;
+    position: relative;
+    align-self: flex-start;
 }
 .personal_area::before{
+    position: relative;
+    top: 17.5px;
+    right: 69px;
     margin-right: 4px;
     content: "";
     background-image: url(../img/user.svg);
     background-size: cover;
     width: 12px;
     height: 16px;
+}
+.personal_area p{
+    margin:0;
+}
+.PA_drop{
+    display:none;
+    position: relative;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    padding: 7px 10px;
+    align-self: flex-start;
+    right: 15px;
+}
+.PA_drop a{
+    text-decoration:none;
+    color: #000000;
+    font-size: 14px;
+    line-height: 17px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
 }
 .filter{
     margin-top: 38px;
