@@ -4,6 +4,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(require('body-parser').json())
+app.use(require('cookie-parser')('queue'))
 app.use(require('compression')())
 app.use(require('cors')({
   credentials: true,
