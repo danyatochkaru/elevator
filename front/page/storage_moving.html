@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../style/order.css">
+    <link rel="stylesheet" href="../style/storage.css">
 </head>
 <body>
-    
+    <div class="page">
+        <div class="header">
+            <div class="navigation">
+                <h1>Щербинский лифтостроительный завод</h1>
+                <p>Склад</p>
+            </div>
+            <div class="personal_area">
+                <p>Фамилия И.О.</p>
+                <div class="PA_drop">
+                    <a href="personal_area.html">Личный кабинет</a>
+                    <a href="../index.html">Выйти</a>
+                </div>
+            </div>
+        </div>
+        <div class="filter">
+            <select class="where" onchange="if (this.value) window.location.href = this.value">
+                <option value="">Выбор:</option>
+                <option value="storage.html">Прибыл</option>
+                <option value="storage_moving.html">Перемещены</option>
+            </select>
+            <a href="orders.html"><button class="orders_but">Заказы</button></a>
+            <button class="filter_but">Фильтр</button>
+        </div>
+        <div class="storage_nav">
+            <div class="stroke_explain">
+                <p>Номер товара</p>
+                <p>Товары (цена)</p>
+                <p>Количество</p>
+                <p>Склад</p>
+                <p>Последнее изменение</p>
+            </div>
+            <ul class="storage_table">
+                <li>
+                    <p>Номер заказа</p>
+                    <p>Товары (цена)</p>
+                    <p>Стоимость</p>
+                    <p>Город</p>
+                    <p>Последнее изменение</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../script/script.js"></script>
 </body>
 </html>
