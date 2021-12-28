@@ -72,12 +72,12 @@ const ORDERS = [
         ]
     }
 ]
-//info_storage
+//info_storage_incoming
 const STORAGES={
     storage_id:1,
     name:"ЩЛЗ"
 }
-const STORAGE = [
+const STORAGE_INCOMING = [
     {
         incoming_id:1,
         datetime: new Date('2021-12-11T13:13:13'),
@@ -125,6 +125,33 @@ const STORAGE = [
         ]
     }
 ]
+//info_storage_moving
+const STORAGE_MOVING = [
+    {
+        moving_id:1,
+        datetime: new Date('2021-12-11T13:13:13'),
+        product_id:1,
+        city_id:1,
+        city_to_id:1,
+        for_id:1
+    },
+    {
+        moving_id:2,
+        datetime: new Date('2021-12-11T13:13:13'),
+        product_id:2,
+        city_id:1,
+        city_to_id:1,
+        for_id:1
+    },
+    {
+        moving_id:3,
+        datetime: new Date('2021-12-11T13:13:13'),
+        product_id:3,
+        city_id:1,
+        city_to_id:1,
+        for_id:1
+    }
+]
 let html = ``;
 if (document.location.href=="http://127.0.0.1:5500/front/page/orders.html") {
     let options_order=ORDERS.map(item=>{
@@ -146,7 +173,7 @@ if (document.location.href=="http://127.0.0.1:5500/front/page/orders.html") {
     let orders_table = document.querySelector(".orders_table");
     orders_table.innerHTML=html;  
 }else if(document.location.href=="http://127.0.0.1:5500/front/page/storage.html"){
-    let options_storage=STORAGE.map(item=>{
+    let options_storage=STORAGE_INCOMING.map(item=>{
         let time_op = {
             year: 'numeric',
             month: 'numeric',
@@ -161,6 +188,24 @@ if (document.location.href=="http://127.0.0.1:5500/front/page/orders.html") {
                    <p>${products.join('<br>')}</p>
                    <p>${count.join('<br>')}</p>
                    <p>${STORAGES.name}</p>
+                   <p>${item.datetime.toLocaleString("ru", time_op)}</p>
+                </li>`
+    })
+    let storage_table = document.querySelector(".storage_table");
+    storage_table.innerHTML = html;
+}else if(document.location.href=="http://127.0.0.1:5500/front/page/storage_moving.html"){
+    let options_storage=STORAGE_MOVING.map(item=>{
+        let time_op = {
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+          };
+        html+=`<li><p>${item.product_id}</p>
+                   <p>${CITIES.name}</p>
+                   <p>${CITIES.name}</p>
+                   <p>${item.for_id}</p>
                    <p>${item.datetime.toLocaleString("ru", time_op)}</p>
                 </li>`
     })
