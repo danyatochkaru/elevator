@@ -16,7 +16,7 @@
                 <p>Склад</p>
             </div>
             <div class="personal_area">
-                <p onclick="PA_drop()">Фамилия И.О.</p>
+                <p>Фамилия И.О.</p>
                 <div class="PA_drop">
                     <a href="personal_area.html">Личный кабинет</a>
                     <a href="../index.html">Выйти</a>
@@ -24,15 +24,19 @@
             </div>
         </div>
         <div class="filter">
+            <select class="where" onchange="if (this.value) window.location.href = this.value">
+                <option value="sorage.html">Прибыл</option>
+                <option value="storage_moving.html">Перемещены</option>
+            </select>
             <a href="orders.html"><button class="orders_but">Заказы</button></a>
             <button class="filter_but">Фильтр</button>
         </div>
         <div class="storage_nav">
             <div class="stroke_explain">
-                <p>Номер заказа</p>
+                <p>Номер товара</p>
                 <p>Товары (цена)</p>
-                <p>Стоимость</p>
-                <p>Город</p>
+                <p>Количество</p>
+                <p>Склад</p>
                 <p>Последнее изменение</p>
             </div>
             <ul class="storage_table">

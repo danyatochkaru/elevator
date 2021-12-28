@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 .orders_but::before{
     content: "";
     background-image: url(../img/Storage.svg);
@@ -29,7 +30,22 @@
     align-items: center;
     
 }
-.orders_table li p{
+.storage_table li p{
     margin: 0;
     justify-self: center;
+}
+.where{
+    margin-right: 23px;
+    background-color: #253D98;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.personal_area:hover .PA_drop{
+    display: flex;
 }
